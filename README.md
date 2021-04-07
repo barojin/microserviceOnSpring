@@ -20,7 +20,7 @@ docker run --name reggo --hostname reggo --network accounts-net -p 1111:1111 pau
 docker run --name accounts --hostname accounts --network accounts-net -p 2222:2222 paulc4/microservice java -jar app.jar accounts --registration.server.hostname=172.19.0.2
 docker run --name web --hostname web --network accounts-net -p 3333:3333 paulc4/microservice java -jar app.jar web --registration.server.hostname=172.19.0.2
 ```
-This project is merged with Paul Chapman code and Hojin Nam.
+This project was merged with a Paul Chapman code and Hojin Nam.
 The part made by Hojin for the project:
 Service 1: manages post
 - Storing post which has a subject and body.
